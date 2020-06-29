@@ -1,0 +1,183 @@
+.icone { 
+height:16px; 
+width:16px
+}
+
+h3{
+border-bottom:2px solid #B6B7B8;
+padding-top:5px;
+color: #AD2184;
+font-size:12px;
+font-weight:bold;
+}
+
+h4{
+padding-top:5px;
+color: #AD2184;
+font-size:12px;
+font-weight:bold;
+}
+
+h5{
+padding-top:5px;
+color: #3e3d40;
+font-size:12px;
+font-weight:bold;
+}
+
+.commande_N3 p{
+padding-top:15px;
+color: #3e3d40;
+font-size:11px;
+}
+
+.commande_N3 {
+padding-bottom:15px;
+overflow : hidden;
+}
+
+.mainbloc .sousbloc{
+background:#f8f8f8; 
+padding-left:20px;
+padding-right:20px;
+overflow:hidden;
+border:1px solid #e7e7e7;
+}
+.table table tr td .link_N2 {
+	color: #AD2184;
+}
+
+.gray{color:#CCCCCC}
+
+ a.fleche.detail_cli{
+margin-top:-30px;
+margin-right:40px;
+}
+
+.text_site {
+padding-top:10px;
+color: #3e3d40;
+font-size:11px;
+}
+
+.bouton{
+border:1px solid #dcdcdc;
+color:#81236a;
+cursor:pointer;
+padding:3px 11px 3px 11px;
+height:23px;
+}
+
+p.confirmation {
+float:left;
+padding-left:10px;
+margin-top:0px;
+margin-left:10px;
+font:bold 12px Arial, Helvetica, sans-serif;
+color:#AD2184;
+}
+
+.required_message {
+font: bold 11px Arial, Helvetica, sans-serif;
+color: red;
+margin-left:25px;
+margin-top:25px;
+margin-bottom:0px;
+}
+.info{
+color:#AD2184;
+}
+div#cfTransfer{
+margin-left:20px;
+}
+b#cfChoice,input#points,input#transfer,img#greenImg{
+display:-moz-inline-box;
+display: inline-block;
+}
+
+img#greenImg {
+	margin-left:20 px;
+}
+div#divTable div {
+display:-moz-inline-box;
+display: inline-block;
+vertical-align:middle;
+}
+
+
+#rightbloc .section h2 {
+	background: #ac3ea2 url(../images/pictos/bg_title.gif) repeat-x left
+		bottom;
+	padding: 6px 7px 7px 13px;
+	color: #FFF;
+	font: 14px Arial, Helvetica, sans-serif;
+}
+
+.mainbloc_onglet_produits  {
+	
+	width: 650px;
+}
+
+.rightbloc_onglet_produits  {
+	
+	width: 280px;
+}
+
+.note_N2_produit {
+	padding: 16px 18px 0px 9px;
+	overflow: hidden;
+}
+
+.note_N2_produit p {
+	float: left;
+	padding-right: 22px
+}
+.section_N3_produit  {
+	
+	width: 300px;
+}
+
+div.left_N3_produits,div.right_N3_produits {
+	width: 241px
+}
+
+.commande_encours{
+	color: red;
+}	
+
+.commande_terminee{
+	color: green;
+}
+
+.commande_annulee{
+	color: grey;
+}
+
+.inwi_color {
+color : #AD2184;
+font-weight:bold;
+}
+
+.standard_select_width{
+	width : 220px;
+}
+
+.section .txt li.lastElement {
+	border-bottom : medium none;
+}
+
+
+span.link_style{
+	color: #AD2184;
+    outline: 0 none;
+    text-decoration: none;
+    
+}
+
+span.link_style:hover{
+	color: #AD2184;
+    outline: 0 none;
+    text-decoration: underline;
+    
+}
+	

@@ -1,0 +1,141 @@
+#basic-modal-content,#basic-modal-content-recu,#basic-modal-all-sites,#basic-modal-site,#basic-modal-cf,#basic_modal_changePassword,#basic_modal_changeSecretQuestion,#basic_modal_validateSecretQuestion,#basic-modal-error{display:none;}
+/* #modal-site-content table,#modal-cf-content table{
+	width:550px;
+} */
+/* Overlay */
+#simplemodal-overlay {background-color:#FFFFFF; }
+
+/* Container */
+#simplemodal-container {color:#3333333; background-color:#FFFFFF; border:4px solid #9d3393; padding:12px;}
+#simplemodal-container .simplemodal-data {padding:8px;}
+#simplemodal-container code {background:#141414; border-left:3px solid #65B43D; color:#bbb; display:block; font-size:12px; margin-bottom:12px; padding:4px 6px 6px;}
+
+#simplemodal-container a.modalCloseImg {background:url(../images/pictos/x.png) no-repeat; width:25px; height:29px; display:inline; z-index:3200; position:absolute; top:-15px; right:-16px; cursor:pointer;}
+#simplemodal-container h3 {color:#9d3393;}
+#basic-modal-content.CF,#basic-modal-content-recu.CF,#basic-modal-error.CF,#basic_modal_validateSecretQuestion.CF{width:450px;}
+#basic-modal-cf.CF{width:580px;height:430px;}
+#basic_modal_changeSecretQuestion.CF {width:500px;}
+#basic-modal-site.CF{width:580px;height:460px;}
+#scrollable{height:200px;overflow:auto; }
+#scrollableAllSites{height:150px;overflow:auto; }
+#basic_modal_changePassword.CF {width:600px}
+#basic-modal-content.smo_confirm {height:100px;  width:530px;}
+#basic-modal-content.smo_modal {height:80px;  width:530px;}
+#basic-modal-content.smo_modal_changement_plafond {height:120px;  width:530px;}
+#basic-modal-content.consolidation {height:120px; width:400px;}
+#basic-modal-all-sites.CF  {height:210px; width:300px;}
+
+.bouton {
+border:1px solid #dcdcdc;
+color:#81236a;
+cursor:pointer;
+//padding:3px 11px 3px 11px;
+height:23px;
+}
+.blocbouton{
+margin-top	:16px;	
+margin-bottom	:16px;	
+overflow:hidden;
+}
+
+.libelle {
+font:bold 11px arial;
+color:#3e3d40;
+padding-bottom:5px;
+}
+
+.body {background:#FFFFFF; color:#9d3393; font: 12px/22px verdana, arial, sans-serif; height:100%; margin:0 auto; width:100%;}
+h1 {color:#3a6d8c; font-size:34px; line-height:40px; margin:0;}
+h3{
+border-bottom:2px solid #B6B7B8;
+padding-top:5px;
+color: #9d3393;
+font-size:12px;
+font-weight:bold;
+}
+
+
+.table_CF {
+border-collapse:collapse;background:#fff
+}
+
+.td_CF {
+min-height:27px;
+border:1px solid #EAEAEA;
+vertical-align:middle;
+padding:7px 4px 4px 11px;
+color:#3E3D40;
+
+}
+
+.th_CF {
+border:1px solid #EAEAEA;
+padding-left:12px;
+background:#8E2E85 url(../images/backgrounds/bg_th.gif) repeat-x 0px 0px;
+font:bold 12px Arial, Helvetica, sans-serif;
+color:#fff;
+text-align:left;
+padding:4px 4px 0px 11px;
+}
+
+/* Popup de services et options du niveau N3 de l'onglet produit de la vue 360 .*/
+div#optionsPopup {
+	background:url("../images/backgrounds/bg_grey_hi.gif") repeat-x scroll left top #FFFFFF;
+}
+
+div.services_popup {
+	width:100%;
+	display:inline-block;
+}
+
+div.services_popup_title{
+	width:48%;
+	display:inline-block;
+	text-align:center;
+	margin-top:16px;
+}
+
+div.services_popup_optionsAndAttributes{
+	text-align:left;
+	color:black;
+	width:48%;
+	display:inline-block;
+	vertical-align:top;
+}
+
+div.services_popup_separator{
+	border-right:2px solid #B6B7B8;
+}
+
+span.services_popup_options{
+	margin-left:10px
+}
+
+span.services_popup_attributes{
+	margin-left:35px
+}
+
+div.attributDiv{
+	height:20px;
+	margin-left:35px;
+	padding-top:5px;
+	font-size: 11px;
+}
+
+div.attributLabel{
+	width:155px;
+	display:inline-block;
+	float:left;
+}
+
+div.attributValue{
+	width:175px;
+	display:inline-block;
+	float:right;
+}
+
+div.attributValueLift{
+	width:170px;
+	display:inline-block;
+	float:left;
+}

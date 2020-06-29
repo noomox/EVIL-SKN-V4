@@ -1,0 +1,177 @@
+
+/* reset */
+html{margin:0; padding:0;}
+body{margin:0; padding:0; font:normal 12px arial, sans-serif; color:#333; background:#eee; overflow-x:hidden;}
+img{border:none;}
+a{text-decoration:none;}
+a:hover{text-decoration:underline;}
+
+/* overflow IE7/6 */
+html.ie6,
+html.ie7{overflow-x:hidden;}
+
+/* clearfix */
+.cf:before,
+.cf:after{content:""; display:table;}
+.cf:after{clear:both;}
+.cf{zoom:1;}
+.clear{content:"."; display:block; height:0; clear:both; visibility:hidden;}
+.right {float:right;}
+.left {float:left;}
+
+/* fonts */
+
+@font-face {
+    font-family: 'OmnesRegular';
+    src: url('../fonts/omnes-webfont.eot');
+    src: url('../fonts/omnes-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/omnes-webfont.woff') format('woff'),
+         url('../fonts/omnes-webfont.ttf') format('truetype'),
+         url('../fonts/omnes-webfont.svg#OmnesRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OmnesMedium';
+    src: url('../fonts/omnes_medium-webfont.eot');
+    src: url('../fonts/omnes_medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/omnes_medium-webfont.woff') format('woff'),
+         url('../fonts/omnes_medium-webfont.ttf') format('truetype'),
+         url('../fonts/omnes_medium-webfont.svg#OmnesMedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OmnesLight';
+    src: url('../fonts/omnes_light-webfont.eot');
+    src: url('../fonts/omnes_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/omnes_light-webfont.woff') format('woff'),
+         url('../fonts/omnes_light-webfont.ttf') format('truetype'),
+         url('../fonts/omnes_light-webfont.svg#OmnesLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'OmnesBold';
+    src: url('../fonts/omnes_bold-webfont.eot');
+    src: url('../fonts/omnes_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/omnes_bold-webfont.woff') format('woff'),
+         url('../fonts/omnes_bold-webfont.ttf') format('truetype'),
+         url('../fonts/omnes_bold-webfont.svg#OmnesBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* -------------- */
+/* ----HEADER---- */
+/* -------------- */
+#header{height:150px; background:url(../images/struct/fond_header.gif) 50% 0 repeat-x; border-bottom:1px solid #fff; position:relative; z-index:10;}
+#header .header_inner{width:940px; margin:0 auto; position:relative; height:150px; background:url(../images/struct/fond_header_halo.gif) 100% 100% no-repeat;}
+#header #bande{height:36px;}
+#header #univers{margin:0; padding:0; float:left; list-style-type:none;}
+#header #univers li{float:left; background:url(../images/struct/sep_bande.gif) 0 0 no-repeat;}
+#header #univers li:first-child{background:none;}
+#header #univers a{color:#fff; font:normal 12px Arial,sans-serif; text-transform:uppercase; display:block; height:24px; padding:12px 15px 0 18px;}
+#header #univers a:hover{color:#e34edd; text-decoration:none;}
+#header #univers li.on{background:url(../images/struct/univers_on.gif) 50% 0 repeat-x;}
+#header #univers li.on a{background:url(../images/picto/fl_violet_bas.gif) 50% 0 no-repeat;}
+#header #univers li.on a:hover{color: #fff;}
+
+#header #bloc_compte{background:#40012e; float:right; margin:4px 0 0 0; padding:0 10px; height:28px; border-radius:14px;list-style-type:none;}
+#header #bloc_compte li{float:left; padding:0 10px; border-left:1px solid #4e0548;width:160px;}
+#header #bloc_compte li:first-child{border-left:none;}
+#header #bloc_compte a{color:#fff; font:bold 11px Arial,sans-serif; display:block; text-transform:uppercase;}
+#header #bloc_compte a .alt{color:#e34edd; text-transform:none;}
+#header #bloc_compte a:hover{color:#e34edd; text-decoration:none;}
+#header #bloc_compte #lien_mon_compte{background:url(../images/picto/portrait.png) 10px 6px no-repeat;}
+#header #bloc_compte #lien_mon_compte a{background:url(../images/picto/fl_ronde_blanc_bas.png) 100% 9px no-repeat; padding:7px 25px 0 25px; height:21px;}
+#header #bloc_compte #lien_panier{background:url(../images/picto/panier.png) 10px 4px no-repeat;}
+#header #bloc_compte #lien_panier a{padding:7px 0 0 25px; height:21px;}
+
+
+#header .message{float:right; margin-top:5px; color:#fff; font:bold 12px Arial,sans-serif; }
+#header .message img{vertical-align: middle; margin-right:10px;}
+#header .message a{color:#e22e91; font-weight:normal; text-decoration: underline;}
+#header .bt_logout{margin-left:10px;}
+
+#header #logo_inwi{position:absolute; top:63px; left:0; display:block;}
+#header #logo_inwi img{display:block;}
+
+.titre_logo{display:inline}
+
+#header #searchIt{
+	position:absolute;
+	top:51px;
+	right:0;
+	height:38px;
+	border:1px solid #e645b7;
+	background:#7b0659;
+	-webkit-box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 0.5);
+	box-shadow: inset 0px 0px 5px 2px rgba(0, 0, 0, 0.5); 
+}
+#header #searchIt #searchTerm{background:none; border:none; color:#deaeda; float:left; display:block; margin-top:10px; margin-left:10px; width:250px;}
+#header #searchIt #searchTerm::-webkit-input-placeholder{color:#deaeda;}
+#header #searchIt #searchTerm:focus{color:#fff; outline:none;}
+#header #searchIt .bt_submit{float:left; display:block; padding:8px;}
+
+.gsc-table-result {border-bottom:1px dotted #c8c8c8;margin:0 0 10px;padding:0 0 10px;}
+.gs-title a{font:bold 15px Arial,sans-serif; }
+.gs-visibleUrl-short{display:none;}
+.gs-watermark{display:none;}
+.gs-pagination{font:bold 16px Arial,sans-serif; color: #000; padding: 3px 0 0 9px;}
+.gs-pagination a{color: #ad2184; }
+.gs-pagination a:hover{color: #000;}
+
+#header #nav{
+	position:absolute;
+	right:0;
+	bottom:0;
+	margin:0;
+	padding:0 15px 0 0;
+	height:45px;
+	list-style-type:none;
+	background:url(../images/struct/fond_nav.gif) 50% 0 repeat-x;
+	border-radius:5px 5px 0px 0px;
+	-webkit-box-shadow:0 -3px 5px 0 rgba(0, 0, 0, 0.4);
+	-moz-box-shadow:0 -3px 5px 0 rgba(0, 0, 0, 0.4);
+	box-shadow:0 -3px 5px 0 rgba(0, 0, 0, 0.4);
+}
+#header #nav li{float:left; display:block;}
+.ie6 #header #nav li{width:90px;}
+#header #nav a{font:normal 18px OmnesMedium,Arial,sans-serif; color:#555; background:url(../images/picto/nav_off.gif) 100% 8px no-repeat; display:block; padding:12px 32px 0 14px; height:33px;}
+.entreprises #header #nav a {font-size:13px; height: 30px; padding: 15px 32px 0 14px;}
+#header #nav li:hover a{color:#ad2184; background-image:url(../images/picto/nav_on.gif)}
+.ie6 #header #nav a{white-space:nowrap;}
+#header #nav a:hover{background-image:url(../images/picto/nav_on.gif); color:#ad2184; text-decoration:none;}
+
+#header #nav .sous-nav{
+	border-left:1px solid #d4d4d4;
+	border-right:1px solid #d4d4d4;
+	border-bottom:3px solid #9d3393;
+	padding:20px;
+	background:#fff;
+	background: -moz-linear-gradient(top, #ffffff 0%, #ededed 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#ededed)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #ffffff 0%,#ededed 100%); /* Chrome10+, Safari5.1+ */
+	background: linear-gradient(top, #ffffff 0%,#ededed 100%); /* W3C */
+	position:absolute;
+	top:45px;
+	z-index:10;
+	-webkit-box-shadow:0 3px 5px 0 rgba(0, 0, 0, 0.4);
+	-moz-box-shadow:0 3px 5px 0 rgba(0, 0, 0, 0.4);
+	box-shadow:0 3px 5px 0 rgba(0, 0, 0, 0.4);
+	display:none;
+}
+#header #nav .sous-nav ul{float:left; width:200px; list-style-type:none; padding:0 10px; margin:0 10px 0 0; border-right:1px dotted #c8c8c8;}
+#header #nav .sous-nav ul:last-of-type{border-right:none;}
+#header #nav .sous-nav ul li{float:none;}
+#header #nav .sous-nav ul li a{padding:5px 0 5px 13px; background:url(../images/picto/fl_epais_violet_droite.gif) 0 10px no-repeat; color:#484848; font:normal 12px Arial,sans-serif; height:auto;}
+#header #nav .sous-nav ul li a:hover{color:#ad2184; background:url(../images/picto/fl_epais_violet_droite.gif) 0 10px no-repeat;}
+#header #nav .sous-nav .push{float:left; width:140px; height:190px; display:block; background:none; padding:0;}
+#header #nav .sous-nav .push img{width:140px; height:190px; display:block;}
+
+#header #nav .active a{color:#ad2184;}
