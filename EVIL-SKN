@@ -2126,7 +2126,7 @@ wpsend
 	10)
 clear
 xterm  -hold -fg green -bg black -T "PX -> $ssid" -e \
-"reaver -i $WIFI_MONITOR -b $mac -c $channel -vvv -K 1"
+"reaver -i $WIFI_MONITOR -b $mac -c $channel -e "$Host_SSID" -vv -K 1"
 menu
 ;;
 	11)
