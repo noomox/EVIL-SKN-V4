@@ -13,6 +13,13 @@
 
 <img src="https://i.imgur.com/66915Ge.png">
 
+#
+
+start hashcat
+<img src="https://i.imgur.com/nuGIsdl.png">
+end of hashcat
+<img src="https://i.imgur.com/CSn7vG6.png">
+
 # Video
 
 <p><a href="https://youtu.be/iJwx1LzLFBA">TEST VIDEO</a>
