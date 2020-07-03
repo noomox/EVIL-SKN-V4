@@ -13,11 +13,9 @@
 
 <img src="https://i.imgur.com/66915Ge.png">
 
-#
+#HASHCAT START/END
 
-<p><strong>start hashcat
 <img src="https://i.imgur.com/nuGIsdl.png">
-<p><strong>end of hashcat
 <img src="https://i.imgur.com/CSn7vG6.png">
 
 # Video
