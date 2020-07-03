@@ -15,9 +15,9 @@
 
 #
 
-start hashcat
+<p><strong>start hashcat
 <img src="https://i.imgur.com/nuGIsdl.png">
-end of hashcat
+<p><strong>end of hashcat
 <img src="https://i.imgur.com/CSn7vG6.png">
 
 # Video
