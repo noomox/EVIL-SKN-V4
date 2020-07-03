@@ -3,8 +3,11 @@
 <p><strong>EVIL-SKN EVIL TWIN AIRCKRACK HASHCAT (CPU/GPU) ATTACK (WPA/WPA2) 
 <p><strong>BULLY/REAVER
 <p><strong>hashcat Work with hccapx files 
+ 
+ <img src="https://i.imgur.com/rqIbn6N.png">
 
-<img src="https://i.imgur.com/rqIbn6N.png">
+ # PMKID
+<img src="https://i.imgur.com/NUeEkUk.png">
 
 # HIDDEN
 
@@ -25,3 +28,6 @@
 <p>https://github.com/FluxionNetwork/fluxion
 <p>COPY ANY ONE TO
 <p>fluxion-master\attacks\Captive Portal\sites
+ # NEED
+ https://github.com/ZerBea/hcxtools
+ https://github.com/ZerBea/hcxdumptool
