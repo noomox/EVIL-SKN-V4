@@ -18,6 +18,11 @@
 <img src="https://i.imgur.com/nuGIsdl.png">
 <img src="https://i.imgur.com/CSn7vG6.png">
 
+# FLOW THE TARGET IF HE CHANGE THE CHANNEL
+<p>scan for check if the channel change
+<p>reset mdk4 attack with new channel
+<img src="https://i.imgur.com/tgiE7EH.png">
+
 # Video
 
 <p><a href="https://youtu.be/iJwx1LzLFBA">TEST VIDEO</a>
