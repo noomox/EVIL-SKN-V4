@@ -852,8 +852,8 @@ function checkdependences {
 	fi
 	sleep 0.025
 
-	echo -ne "( hcxpcaptool )....."
-	if ! hash hcxpcaptool 2>/dev/null; then
+	echo -ne "( hcxpcapngtool )....."
+	if ! hash hcxpcapngtool 2>/dev/null; then
 		echo -e "\e[1;31mNot installed $green (Enter)"$transparent""
 		read yn
 	else
@@ -2639,7 +2639,7 @@ echo "Will now convert .cap to .hccapx ,Please wait..."
 sleep 3
 clear
 top
-hcxpcaptool -o "$CAPLOCATION$CAPNAME.hccapx" "$CAPLOCATION$CAPNAME"
+hcxpcapngtool --hccapx="$CAPLOCATION$CAPNAME.hccapx" "$CAPLOCATION$CAPNAME"
 clear
 top
 
@@ -2722,7 +2722,7 @@ echo "Will now convert .cap to .hccapx ,Please wait..."
 sleep 3
 clear
 top
-hcxpcaptool -o "$CAPLOCATION$CAPNAME.hccapx" "$CAPLOCATION$CAPNAME"
+hcxpcapngtool --hccapx="$CAPLOCATION$CAPNAME.hccapx" "$CAPLOCATION$CAPNAME"
 clear
 top
 
@@ -2790,7 +2790,7 @@ sleep 1
 sleep 1
 xterm -geometry  100x30+0+0 -fg green -bg black -T "PMKID > $mac" -e hcxdumptool -o "$HANDSHAKE_PATH/$Host_SSID-$Host_MAC-pmkid.pcapng" -i $WIFI_MONITOR --filterlist_ap=$DUMP_PATH/PMKID.txt --filtermode=2 --enable_status=15
 sleep 1
-hcxpcaptool -k "$HANDSHAKE_PATH/$Host_SSID-$Host_MAC-pmkid.txt" "$HANDSHAKE_PATH/$Host_SSID-$Host_MAC-pmkid.pcapng"
+hcxpcapngtool --pmkid="$HANDSHAKE_PATH/$Host_SSID-$Host_MAC-pmkid.txt" "$HANDSHAKE_PATH/$Host_SSID-$Host_MAC-pmkid.pcapng"
 sleep 1
 rm "$HANDSHAKE_PATH/$Host_SSID-$Host_MAC-pmkid.pcapng"
 clear
@@ -10253,8 +10253,8 @@ echo -e "      "$red"12)"$yellow"Hashcat     - Hashcat (show cracked password)"
 echo -e "      "$red"13)"$yellow"Hashcat     - Hashcat ( MULTI HCCAPX TO HCCAPX )"
 echo -e "      "$red"14)"$yellow"Hashcat     - Hashcat ( copy save TO desktop )"
 echo -e "      "$red"15)"$yellow"Hashcat     - Hashcat ( move save from desktop TO the save path )"
-echo -e "      "$red"16)"$yellow"Hashcat     - hcxpcaptool ( output hccapx file (hashcat -m 2500/2501) )"
-echo -e "      "$red"17)"$yellow"Hashcat     - hcxpcaptool ( output PMKID file (hashcat -m 16800 new format) )"
+echo -e "      "$red"16)"$yellow"Hashcat     - hcxpcapngtool ( output hccapx file (hashcat -m 2500/2501) )"
+echo -e "      "$red"17)"$yellow"Hashcat     - hcxpcapngtool ( output PMKID file (hashcat -m 16800 new format) )"
 echo -e "      "$red"18)"$transparent" Exit "
 echo
 echo -n "###> "
@@ -10603,7 +10603,7 @@ echo "Will now convert .cap to .hccapx ,Please wait..."
 sleep 3
 clear
 top
-hcxpcaptool -o "$CAPLOCATION$CAPNAME.hccapx" "$CAPLOCATION$CAPNAME"
+hcxpcapngtool --hccapx="$CAPLOCATION$CAPNAME.hccapx" "$CAPLOCATION$CAPNAME"
 clear
 top
 
@@ -10686,7 +10686,7 @@ echo "Will now convert .cap to .hccapx ,Please wait..."
 sleep 3
 clear
 top
-hcxpcaptool -o "$CAPLOCATION$CAPNAME.hccapx" "$CAPLOCATION$CAPNAME"
+hcxpcapngtool --hccapx="$CAPLOCATION$CAPNAME.hccapx" "$CAPLOCATION$CAPNAME"
 clear
 top
 
@@ -10974,7 +10974,7 @@ echo ""
 read FICHEROCAPENTRADA
 FICHEROCAP=$(echo "$FICHEROCAPENTRADA" | sed "s/'//g")
 
-hcxpcaptool -o "$FICHEROCAP.hccapx" "$FICHEROCAP"
+hcxpcapngtool --hccapx="$FICHEROCAP.hccapx" "$FICHEROCAP"
 
 echo -e " "Conversion Complete "$green (^_^)"
 sleep 3
@@ -10990,7 +10990,7 @@ echo ""
 read FICHEROCAPENTRADA
 FICHEROCAP=$(echo "$FICHEROCAPENTRADA" | sed "s/'//g")
 
-hcxpcaptool -k "$FICHEROCAP.txt" "$FICHEROCAP"
+hcxpcapngtool --pmkid="$FICHEROCAP.txt" "$FICHEROCAP"
 
 echo -e " "Conversion Complete "$green (^_^)"
 sleep 3
